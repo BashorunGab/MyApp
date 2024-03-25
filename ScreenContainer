@@ -1,0 +1,50 @@
+import { StatusBar } from 'expo-status-bar';
+import { Image, StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    
+      <View style={{backgroundColour: "#ffcccc", padding: 40, height: "100%",}}>
+        <Text style={styles.header}> React Native </Text>
+        <Text style={styles.body}> React Native is a very good course </Text>
+              </View>
+
+
+              <ScrollView>
+              <View style={{ backgroundColor: "gray", height: 500, marginTop: 5, }}></View>
+              <View style={{ backgroundColor: "gray", height: 500, marginTop: 5, }}></View>
+              <View style={{ backgroundColor: "gray", height: 500, marginTop: 5, }}></View>
+            </ScrollView>
+
+              <FlatList
+    data={list}
+    renderItem={({ item })=> {
+        return(
+            <>
+              <Text>
+                {item.id}: {item.text}
+              </Text>
+            </>
+            )
+      } }
+    />
+    
+  );
+  }
+
+const styles = StyleSheet.create({
+  header: {
+    colour: "red",
+    fontSize: 30,
+    fontWeight: "bold",
+  },
+  body: {
+    colour: "red",
+    marginTop: 20,
+  },
+  img: {
+    width: 20,
+    height: 20
+
+  }
+})
