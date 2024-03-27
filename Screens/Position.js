@@ -24,10 +24,7 @@ const styles = StyleSheet.create({
         flexwrap: "",
         flexdirection: "row",
 
-//fontawesome
-
-
-        child:{
+    child:{
             backgroundColor: "Green",
             width: 50,
             height: 50,

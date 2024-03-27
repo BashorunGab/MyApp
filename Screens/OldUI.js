@@ -3,7 +3,6 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 
 export function OldUI() {
   return (
-    
       <View  style={{backgroundColor: "blue", padding: 40, height: "100%", }}>
         <Text style={styles.header}> Onlline Phones </Text>
         <Text style={styles.body}> The home for Best UK Used Phones </Text>
@@ -11,16 +10,13 @@ export function OldUI() {
         <Image source={require("./assets/phimg.jpeg")} style={styles.img}></Image>
         <View style={{alignItems: "center", }}></View>
         </View>
-    
   );
   }
-
 const styles = StyleSheet.create({
   header: {
     colour: "red",
     fontSize: 30,
     fontWeight: "bold",
-    
   },
   body: {
     colour: "red",
@@ -29,6 +25,5 @@ const styles = StyleSheet.create({
   img: {
     width: 200,
     height: 200
-
   }
 })

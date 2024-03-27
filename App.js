@@ -5,12 +5,13 @@ import { Login } from './Screens/Login';
 import { Event } from './Screens/Event';
 import { Position } from './Screens/Position';
 import { MyScreen } from './Screens/MyScreen';
+import { Products } from './Screens/Products';
 
 
 export default function App() {
   return (
     <View style={{flex:1}}>
-      <MyScreen/>
+      <Products/>
     </View>
   );
 }
